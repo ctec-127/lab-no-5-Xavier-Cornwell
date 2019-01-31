@@ -50,7 +50,10 @@
                     campus today and for many years to come.</p>
         </div>
     </div>
-
+    <?php                
+                if (isset($_GET['aralia'])){
+                    if ($_GET['aralia'] == 'yes') {        
+?> 
     <div class="container-fluid mt-3">
         <h3 class="text-white p-3 shadow">Aralia</h3>
         <div class="row mb-3">
@@ -68,6 +71,14 @@
                 </div>
             </div>
         </div>
+        <?php
+    }
+    
+    
+    
+    } ?>
+
+
 
         <h3 class="p-3 shadow">Arborvitae</h3>
         <div class="row mb-3">
@@ -85,8 +96,8 @@
                 </div>
             </div>
         </div>
-
-        <h3 class="p-3 shadow">Ash</h3>
+        
+        <h3 class="p-3 shadow">Ash</h3>                
         <div class="row mb-3">
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="card mt-3 mb-3 shadow">
